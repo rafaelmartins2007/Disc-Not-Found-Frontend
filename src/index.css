@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+/* Modo claro */
+:root {
+  --fundo: #F4E8CF;
+  --cartao: #EDE0C4;
+  --texto: #181B1A;
+  --texto-suave: #D8C7A8;
+  --titulo: #0D0F0E;
+  --destaque: #F26B38;
+}
+
+/* Modo escuro (tema predefinido) */
+.dark {
+  --fundo: #0D0F0E;
+  --cartao: #181B1A;
+  --texto: #F4E8CF;
+  --texto-suave: #D8C7A8;
+  --titulo: #F4E8CF;
+  --destaque: #F26B38;
+}
+
+/* Liga as variáveis ao Tailwind */
+@theme inline {
+  --color-fundo: var(--fundo);
+  --color-cartao: var(--cartao);
+  --color-texto: var(--texto);
+  --color-texto-suave: var(--texto-suave);
+  --color-titulo: var(--titulo);
+  --color-destaque: var(--destaque);
+} 
