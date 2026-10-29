@@ -29,3 +29,7 @@
   --color-titulo: var(--titulo);
   --color-destaque: var(--destaque);
 } 
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}

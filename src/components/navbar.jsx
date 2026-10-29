@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import logo from '../assets/logo.png'
 import { Search, Heart, ShoppingBag, Sun, Moon, User } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const iconStyle = 'flex h-9 w-9 items-center justify-center rounded-lg border border-texto/20 text-texto transition-colors hover:border-destaque hover:text-destaque'
 
@@ -49,13 +50,13 @@ function Navbar() {
                         )}
                     </button>
 
-                    <a
-                        href="/login"
+                    <Link
+                        to="/login"
                         className="ml-2 flex h-9 items-center gap-2 rounded-lg border border-texto/20 px-3 text-sm text-texto transition-colors hover:border-destaque hover:text-destaque"
                     >
                         <User size={16} strokeWidth={1.5} />
                         Entrar
-                    </a>
+                    </Link>
                 </div>
             </nav>
         </header>
